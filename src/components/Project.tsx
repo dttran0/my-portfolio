@@ -1,16 +1,9 @@
 import React from "react";
-import mock01 from '../assets/images/mock01.png';
-import mock02 from '../assets/images/mock02.png';
-import mock03 from '../assets/images/mock03.png';
-import mock04 from '../assets/images/mock04.png';
-import mock05 from '../assets/images/mock05.png';
-import mock06 from '../assets/images/mock06.png';
-import mock07 from '../assets/images/mock07.png';
-import mock08 from '../assets/images/mock08.png';
-import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
+
 import beacondaid from '../assets/images/BeaconAid Thumbnail.png';
 import nyc_transport from '../assets/images/nyc_transportation.jpg';
+import truetalent from '../assets/images/truetalent.png';
+import ecotrack from '../assets/images/ecotrack.png';
 import '../assets/styles/Project.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy } from '@fortawesome/free-solid-svg-icons';
@@ -22,7 +15,7 @@ function Project() {
         <div className="projects-grid">
             <div className="project">
                 <div className="project-image-container">
-                    <img src={mock10} className="zoom project-image" alt="TrueTalent AI interviewing platform" />
+                    <img src={truetalent} className="zoom project-image" alt="TrueTalent AI interviewing platform" />
                 </div>
                 <h2>TrueTalent | LA Hacks</h2>
                 <p>AI-powered technical interviewing platform enhanced with multi-modal AI to detect potential cheating during interviews. It analyzes video, audio, and code data streams in real time—tracking eye movements, posture, and speech patterns—to flag suspicious behavior and assess candidate authenticity. It also evaluates code for AI-generated traits and possible plagiarism, helping interviewers ensure a fair and accurate assessment.</p>
@@ -44,7 +37,7 @@ function Project() {
             </div>
             <div className="project">
                 <div className="project-image-container">
-                    <img src={mock08} className="zoom project-image" alt="EcoTrack sustainable practices app" />
+                    <img src={ecotrack} className="zoom project-image" alt="EcoTrack sustainable practices app" />
                 </div>
                 <h2>EcoTrack | USC Hackathon 
                     <FontAwesomeIcon icon={faTrophy} style={{ color: '#FFD700', marginLeft: '8px' }} />
@@ -60,6 +53,7 @@ function Project() {
                 <div className="project-image-container">
                 <img src={nyc_transport} className="zoom project-image" alt="NYC transportation and pollution data visualization" />
                 </div>
+                <h2>Transportations Impact on Pollution & Health in New York City</h2>
                 <p>Comprehensive data science pipeline to explores the link between New York City's multimodal transportation systems—traffic, transit, biking, and walking—and air pollution levels, focusing on Nitric Oxide (NO) and PM2.5. Using geospatial and health data, it aims to identify how pollution disparities correlate with asthma rates and hospitalizations across different NYC neighborhoods.</p>
                 <div className="button-group">
                     <a href="https://sites.google.com/uci.edu/ds-capstone-2025/home" target="_blank" rel="noreferrer" className="project-button">Website</a>
