@@ -3,20 +3,29 @@
     font-family: 'Courier Prime', monospace;
 }
 
+
+.items-container h1 {
+  font-size: 3.5rem;
+}
+
 .vertical-timeline p {
     color: rgb(39, 40, 34);
+    
 }
 
 .vertical-timeline-element p {
     color: rgb(39, 40, 34);
+    
 }
 
 .vertical-timeline-element h3 {
     color: rgb(39, 40, 34);
+    font-size: 1.5rem;
 }
 
 .vertical-timeline-element h4 {
     color: rgb(39, 40, 34);
+    font-size: 1.2rem;
 }
 
 .vertical-timeline-element span {
@@ -30,6 +39,40 @@
 .svg-inline--fa {
     color: white;
 }
+
+.company-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem; // spacing between logo and text
+}
+
+.company-logo {
+  max-height: 100px;
+  max-width: 100px;
+  object-fit: contain;
+}
+
+.vertical-timeline-element-content {
+  background-color: white;   // Ensure the box is white
+  border-radius: 8px;        // Optional: round corners for style
+  padding: 1rem;             // Some padding inside the box
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  // Light default shadow
+
+  transition: 
+    transform 0.3s ease, 
+    box-shadow 0.3s ease, 
+    font-weight 0.3s ease;
+
+  &:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    
+    h3, h4, p {
+      font-weight: 700; // bold on hover
+    }
+  }
+}
+
 
 @media screen and (max-width: 1170px) {
     .vertical-timeline-element .vertical-timeline-element-date {

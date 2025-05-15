@@ -3,7 +3,21 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
 
+    h3 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 1.6;
+    }
     svg {
         color: white;
     }
@@ -23,8 +37,9 @@
 .chip {
     color: rgb(39, 40, 34) !important;
     background-color: white !important;
-    font-size: 0.8rem !important;
+    font-size: 1.3rem !important;
     height: 25px !important;
+    cursor: default;
   
     span {
         font-family: 'Courier Prime', monospace;
@@ -34,6 +49,16 @@
     svg {
         height: 15px !important;
     }
+
+    &:hover {
+        background-color: #1976d2 !important; /* MUI primary blue */
+        color: white !important;
+
+        span {
+            color: white !important;
+        }
+    }
+
 }
 
 .flex-chips {
