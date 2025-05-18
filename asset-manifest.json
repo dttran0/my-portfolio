@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.1b743db6.css",
+    "main.js": "/my-portfolio/static/js/main.48f246de.js",
+    "static/js/453.b05d8aa5.chunk.js": "/my-portfolio/static/js/453.b05d8aa5.chunk.js",
+    "static/media/truetalent.png": "/my-portfolio/static/media/truetalent.3404aea2a83d573bdda2.png",
+    "static/media/BeaconAid Thumbnail.png": "/my-portfolio/static/media/BeaconAid Thumbnail.0c98f71018eb6535080e.png",
+    "static/media/ecotrack.png": "/my-portfolio/static/media/ecotrack.1ecb898444dbb706b09d.png",
+    "static/media/profile_image3.png": "/my-portfolio/static/media/profile_image3.9334e2d9c855129783d7.png",
+    "static/media/bg-light.png": "/my-portfolio/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/my-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/nyc_transportation.jpg": "/my-portfolio/static/media/nyc_transportation.2e85e5b5d34adeb55737.jpg",
+    "static/media/Berkeley_lab_logo.png": "/my-portfolio/static/media/Berkeley_lab_logo.5ce090240f6755b47a65.png",
+    "static/media/intel_logo (2).png": "/my-portfolio/static/media/intel_logo (2).477c86d9d45da8f33a01.png",
+    "static/media/Siemens_AG_logo.png": "/my-portfolio/static/media/Siemens_AG_logo.d39410390c9f5de47335.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.1b743db6.css.map": "/my-portfolio/static/css/main.1b743db6.css.map",
+    "main.48f246de.js.map": "/my-portfolio/static/js/main.48f246de.js.map",
+    "453.b05d8aa5.chunk.js.map": "/my-portfolio/static/js/453.b05d8aa5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b743db6.css",
+    "static/js/main.48f246de.js"
+  ]
+}
