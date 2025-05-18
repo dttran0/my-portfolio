@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
+import Paper from '@mui/material/Paper'; 
 
 function Contact() {
 
@@ -16,7 +17,7 @@ function Contact() {
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
 
-  const form = useRef<HTMLFormElement | null>(null);
+  const form = useRef();
 
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -49,67 +50,81 @@ function Contact() {
     }
   };
 
-  return (
-    <div id="contact">
-      <div className="items-container">
-        <div className="contact_wrapper">
-          <h1>Contact Me</h1>
-          <Box
-            ref={form}
-            component="form"
-            noValidate
-            autoComplete="off"
-            className='contact-form'
+return (
+  <div id="contact">
+    <div className="items-container">
+      <div className="contact_wrapper">
+        <h1>Contact Me</h1>
+        <p>Have an exciting project or job opportunity in mind? Let’s team up and bring it to life!</p>
+
+        <Paper
+          elevation={3}
+          sx={{
+            backgroundColor: 'white',
+            borderRadius: 2,
+            padding: 4,
+            maxWidth: 600,
+            margin: '0 auto',
+          }}
+        >
+          <Box 
+            component="form" 
+            onSubmit={sendEmail}
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 2,
+            }}
           >
-            <div className='form-flex'>
-              <TextField
-                required
-                id="outlined-required"
-                label="Your Name"
-                placeholder="What's your name?"
-                value={name}
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
-                error={nameError}
-                helperText={nameError ? "Please enter your name" : ""}
-              />
-              <TextField
-                required
-                id="outlined-required"
-                label="Email / Phone"
-                placeholder="How can I reach you?"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-                error={emailError}
-                helperText={emailError ? "Please enter your email or phone number" : ""}
-              />
-            </div>
             <TextField
-              required
-              id="outlined-multiline-static"
-              label="Message"
-              placeholder="Send me any inquiries or questions"
-              multiline
-              rows={10}
-              className="body-form"
-              value={message}
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
-              error={messageError}
-              helperText={messageError ? "Please enter the message" : ""}
+              label="Your Name"
+              variant="outlined"
+              fullWidth
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              error={nameError}
+              helperText={nameError ? "Name is required" : ""}
             />
-            <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
+
+            <TextField
+              label="Email / Phone"
+              variant="outlined"
+              fullWidth
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              error={emailError}
+              helperText={emailError ? "Email or phone is required" : ""}
+            />
+
+            <TextField
+              label="Message / Inquiry"
+              variant="outlined"
+              fullWidth
+              multiline
+              rows={6}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              error={messageError}
+              helperText={messageError ? "Message cannot be empty" : ""}
+            />
+
+            <Button 
+              type="submit"
+              variant="contained" 
+              endIcon={<SendIcon />}
+              sx={{ mt: 2 }}
+            >
               Send
             </Button>
           </Box>
-        </div>
+        </Paper>
       </div>
     </div>
-  );
-}
+  </div>
+);
+};
+
+
+
 
 export default Contact;
